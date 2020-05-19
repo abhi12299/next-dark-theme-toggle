@@ -1,0 +1,33 @@
+body.light {
+  --font-color: #000000;
+  --bg-color: #ffffff;
+}
+
+body.dark {
+  --font-color: #ffffff;
+  --bg-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  transition: background-color 0.25s ease-in;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--font-color);
+  font-size: 30px;
+  font-family: monospace;
+}
+
+a {
+  cursor: pointer;
+  color: red;
+  text-decoration: underline;
+}
